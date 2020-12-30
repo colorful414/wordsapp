@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/addWordsId"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:fadingEdge="vertical"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        >
+      <TextView
+          android:layout_width="100dp"
+          android:layout_height="50dp"
+          android:textSize="20sp"
+          android:gravity="center"
+        android:text="单词:"/>
+        <EditText
+            android:id="@+id/fb_words_name"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:hint="请输入单词">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="翻译:"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/fb_words_info"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:scrollbars="vertical"
+            android:minLines="8"
+            android:maxLines="10"
+            android:background="@drawable/shap_edit_bg"
+            android:hint="请输入翻译">
+        </EditText>
+        </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="读音:"/>
+            <EditText
+                android:id="@+id/fb_words_fy"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:hint="请输入读音">
+            </EditText>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="类目:"/>
+
+        <Spinner
+            android:id="@+id/dicCategory"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:overlapAnchor="false"
+        >
+
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="图片:"/>
+
+        <Button
+            android:id="@+id/openPicDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择图片"
+            android:onClick="openPicDigClk"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/wordPicIv"
+            android:layout_width="260dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_launcher_foreground" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/fb_saveWords"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:text="提交保存" />
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

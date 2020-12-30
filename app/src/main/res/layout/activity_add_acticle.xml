@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/addActicleId"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                >
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:text="标题:"/>
+                <EditText
+                    android:id="@+id/fb_article_title"
+                    android:layout_width="260dp"
+                    android:layout_height="50dp"
+                    android:hint="请输入标题">
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                >
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:text="内容:"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/fb_article_info"
+                        android:layout_width="260dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:gravity="top"
+                        android:scrollbars="vertical"
+                        android:minLines="8"
+                        android:maxLines="10"
+                        android:background="@drawable/shap_edit_bg"
+                        android:hint="请输入内容">
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                >
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:text="封面:"/>
+
+                <Button
+                    android:id="@+id/openActicleDialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="选择图片"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                >
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/actPicIv"
+                    android:layout_width="260dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/ic_launcher_foreground" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                >
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fb_saveArticle"
+                    android:text="提交保存" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

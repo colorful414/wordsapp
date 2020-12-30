@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.PractiseActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="单词每日一练"
+            android:textSize="25sp">
+        </TextView>
+        <TextView
+            android:id="@+id/practise_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="第1题:"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:textSize="23sp">
+        </TextView>
+        <TextView
+            android:id="@+id/practise_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="book"
+            android:textSize="20sp">
+        </TextView>
+        <TextView
+            android:id="@+id/practise_info"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="译:书; 书籍; 印刷(或电子)出版物; 著作; 本子; 簿子"
+            android:textSize="20sp">
+        </TextView>
+        <TextView
+            android:id="@+id/practise_fy"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="读音:美[bʊk]"
+            android:textSize="20sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/practise_gd"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:drawableEnd="@drawable/nb"
+            android:text="跟读:"
+            android:onClick="gdBtn"
+            android:textSize="20sp">
+        </TextView>
+
+        <Button
+            android:id="@+id/practise_nextBtn"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:onClick="nextPractise"
+            android:text="下一个">
+        </Button>
+
+    </LinearLayout>
+
+
+</LinearLayout>

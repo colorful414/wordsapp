@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragment.HomeFragment">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical"
+        android:fadingEdge="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <!-- 轮播start-->
+    <RelativeLayout
+        android:id="@+id/lb"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/looper_paper"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/points"
+                >
+            </LinearLayout>
+    </RelativeLayout>
+    <!-- 轮播end-->
+
+    <!-- 首页菜单start -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom">
+        <!-- 第一个start-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+                <!-- 圆形按钮start-->
+                <LinearLayout
+                    android:id="@+id/circleLy1"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/practiseId"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/reader"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textColor="#6200EE"
+                        android:textAlignment="center"
+
+                        >
+                    </TextView>
+                </LinearLayout>
+               <!-- 圆形按钮end-->
+                <!-- 字体start-->
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAlignment="center"
+                        android:text="每日一练"
+                        android:textSize="20sp"
+                        >
+                    </TextView>
+              </LinearLayout>
+              <!-- 字体end-->
+
+        </LinearLayout>
+        <!-- 第一个end-->
+
+        <!-- 第二个start-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <!-- 圆形按钮start-->
+            <LinearLayout
+                android:id="@+id/circleLy2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/searchId"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/search"
+
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="#6200EE"
+                    android:textAlignment="center"
+                    >
+                </TextView>
+            </LinearLayout>
+            <!-- 圆形按钮end-->
+            <!-- 字体start-->
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="单词翻译"
+                    android:textSize="20sp"
+                    >
+                </TextView>
+            </LinearLayout>
+            <!-- 字体end-->
+
+        </LinearLayout>
+        <!-- 第二个end-->
+
+        <!-- 第三个start-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <!-- 圆形按钮start-->
+            <LinearLayout
+                android:id="@+id/circleLy3"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/dictId"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/dict"
+
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="#6200EE"
+                    android:textAlignment="center"
+                    >
+                </TextView>
+            </LinearLayout>
+            <!-- 圆形按钮end-->
+            <!-- 字体start-->
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="分类词库"
+                    android:textSize="20sp"
+                    >
+                </TextView>
+            </LinearLayout>
+            <!-- 字体end-->
+
+        </LinearLayout>
+        <!-- 第三个end-->
+
+    </LinearLayout>
+    <!-- 首页菜单end -->
+
+    <!-- 精品美文start -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+        <!-- 文字start-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingTop="20dp"
+                android:text="精品美文"
+                android:textSize="20sp">
+
+            </TextView>
+
+        </LinearLayout>
+        <!-- 文字end-->
+         <!--文章start-->
+        <LinearLayout
+            android:id="@+id/listView_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+        <ListView
+            android:id="@+id/actiListViewId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ListView>
+        </LinearLayout>
+        <!--文章end-->
+
+    </LinearLayout>
+
+
+    <!-- 精品美文end -->
+
+    </LinearLayout>
+</ScrollView>
+
+
+</FrameLayout>
