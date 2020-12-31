@@ -39,7 +39,7 @@ public class WordsService {
     }
 
     /**
-     * 判断猫是否已经存在
+     * 判断单词是否已经存在
      */
     public  boolean checkWordsIsExits(Context context,String name){
         SQLiteDatabase db = DBUtils.getDbHelper(context);

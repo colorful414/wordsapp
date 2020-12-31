@@ -1,5 +1,7 @@
 package cn.itfxq.wordsapp.util;
 
+import android.annotation.SuppressLint;
+
 public class ItFxqConstants {
 
     public static final String DBNAME =  "itfxq-words.db";
@@ -12,6 +14,7 @@ public class ItFxqConstants {
 
     public static final String PACKNAME = "cn.itfxq.wordsapp";
 
+    @SuppressLint("SdCardPath")
     public static final String PICPATH = "/data/data/cn.itfxq.wordsapp/pic/";
 
     public static final  int RANDOMSIZE = 5;
